@@ -6,15 +6,20 @@ body {
   color: #222;
   background-color: #ECF0F1;
   text-align: center;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   padding: 0;
   margin-top: 40px;
+  height: 75%;
 }
 
-.footer {
-  margin-top: 60px;
+footer{
+  margin: auto auto 1rem auto;
 }
 
 a {
@@ -24,19 +29,32 @@ a {
 input {
   display: block;
   position: relative;
-  margin: 10px auto;
+  margin: 1rem auto;
 }
 
-input#button {
-  width: 230px;
+.submit {
+  width: 150px;
+  height: 3rem;
+  border-radius: 50px;
+  border: none;
+  background-color: violet;
+  color: lavender;
+}
+
+.submit:hover{
+  background-color: mediumorchid;
+  color: white;
+  cursor: pointer;
 }
 
 .view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
+  position: relative;
+  margin: 4rem auto;
   border: 1px  solid  #aaa;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  width: 60%;
+  width: 40%;
   min-width: 400px;
+  height: 30%;
 }
